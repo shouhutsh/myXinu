@@ -1,3 +1,5 @@
+/* queue.h */
+
 #ifndef NQENT
 #define NQENT	(NPROC + 4 + NSEM + NSEM)
 #endif
@@ -29,7 +31,7 @@ extern	struct qentry	queuetab[];
 
 pid32	getfirst(qid16);
 pid32	getlast(qid16);
-pid32	getitem(qid16);
+pid32	getitem(pid32);
 pid32	enqueue(pid32, qid16);
 pid32	dequeue(qid16);
 qid16	newqueue(void);

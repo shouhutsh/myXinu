@@ -1,3 +1,5 @@
+/* queue.c */
+
 #include <xinu.h>
 
 struct qentry	queuetab[NQENT];
@@ -88,14 +90,14 @@ qid16	newqueue(void)
 	qid16 qid, head, tail;
 
 	qid = nextque;
-	if(isbadqid(q))
+	if(isbadqid(qid))
 	{
 		return SYSERR;
 	}
 	nextque += 2;
 
 	head = queuehead(qid);
-	tail = queuehead(qid);
+	tail = queuetail(qid);
 
 	queuetab[head].qnext = tail;
 	queuetab[head].qprev = EMPTY;

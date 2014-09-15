@@ -7,13 +7,13 @@
 #define PR_FREE		0
 
 
-#define isbadpid(p)	((pid32)(p) < 0 || \
-			 (pid32)(p) >= NPROC || \
-			 (proctab[p].prstate == PR_FREE))
+#define isbadpid(p)	((p) < 0 || \
+			 (p) >= NPROC || \
+			 (proctab[(p)].prstate == PR_FREE))
 
 
 struct procEntry{
-	
+	uint16	prstate;
 };
 
 
