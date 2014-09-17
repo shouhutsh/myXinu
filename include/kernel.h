@@ -14,6 +14,9 @@ typedef unsigned long long	uint64;
 
 typedef int16	qid16;
 typedef int32	pid32;
+typedef int32	status;
+typedef int16	pri16;
 
 
 #define SYSERR	(-1)
+#define OK	(1)

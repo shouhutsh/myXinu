@@ -9,13 +9,13 @@
 #define MAXKEY	0x7FFFFFFF
 #define MINKEY	0x80000000
 
-struct qentry	{
+struct queEntry	{
 	int32	qkey;
 	qid16	qnext;
 	qid16	qprev;
 };
 
-extern	struct qentry	queuetab[];
+extern	struct queEntry	queuetab[];
 
 
 #define queuehead(q)	(q)

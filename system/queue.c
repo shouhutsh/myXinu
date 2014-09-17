@@ -2,7 +2,7 @@
 
 #include <xinu.h>
 
-struct qentry	queuetab[NQENT];
+struct queEntry	queuetab[NQENT];
 
 pid32	getitem(pid32 pid)
 {
