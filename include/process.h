@@ -23,7 +23,11 @@
 struct procEntry{
 	uint16	prstate;	//状态
 	pri16	prprio;		//优先级
+	char *	prstkptr;	//栈指针
 };
 
 
 extern	struct procEntry	proctab[]; 
+
+
+extern	pid32	currproc;
