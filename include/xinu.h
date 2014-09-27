@@ -5,6 +5,7 @@
 #include <process.h>
 #include <queue.h>
 #include <defer.h>
+#include <semaphore.h>
 
 #include <clock.h>
 
